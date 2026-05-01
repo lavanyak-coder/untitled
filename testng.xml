@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="HybridFrameworkSuite">
+
+    <test name="LoginTest">
+
+        <classes>
+            <class name="Tests.LoginTest"/>
+        </classes>
+
+    </test>
+
+</suite>

@@ -9,7 +9,6 @@ import java.util.Map;
 
 
 public class LoginTest extends BaseTest{
-
     LoginPage loginPage;
 
     @BeforeMethod
@@ -17,7 +16,6 @@ public class LoginTest extends BaseTest{
         setup();
         loginPage = new LoginPage(driver);
     }
-
     @Test
     public void loginTest() throws Exception {
         Map<String, String> data = FilloUtil.getLoginData();
@@ -26,7 +24,6 @@ public class LoginTest extends BaseTest{
                 data.get("Password")
         );
     }
-
     @AfterMethod
     public void close() {
         tearDown();

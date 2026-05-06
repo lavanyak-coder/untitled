@@ -29,10 +29,8 @@ public class LoginPage {
 
     public void login(String user, String pass) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
         wait.until(ExpectedConditions.visibilityOf(username));
         username.sendKeys(user);
-
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@type='password']")));
         password.sendKeys(pass);
         loginBtn.click();
